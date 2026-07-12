@@ -3,6 +3,8 @@ on:
   schedule:
     # 每天 UTC 时间凌晨 2:00 自动运行
     - cron: "0 2 * * *"
+  workflow_dispatch:   # allows manual runs
+  
 jobs:
   update-readme:
     name: Update Readme with badges
