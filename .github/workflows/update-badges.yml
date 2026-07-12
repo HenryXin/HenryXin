@@ -1,0 +1,14 @@
+name: Update badges
+on:
+  schedule:
+    # 每天 UTC 时间凌晨 2:00 自动运行
+    - cron: "0 2 * * *"
+jobs:
+  update-readme:
+    name: Update Readme with badges
+    runs-on: ubuntu-latest
+    steps:
+      - name: Badges - Readme
+        uses: pemtajo/badge-readme@main
+        with:   
+          CREDLY_USER: xin-yuepeng
