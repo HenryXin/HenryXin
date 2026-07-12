@@ -5,6 +5,9 @@ on:
     - cron: "0 2 * * *"
   workflow_dispatch:   # allows manual runs
   
+permissions:
+  contents: write
+  
 jobs:
   update-readme:
     name: Update Readme with badges
